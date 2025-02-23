@@ -11,7 +11,7 @@
 		</div>
 	{:else}
 		<div class="pt-10 md:pt-20 lg:pt-72">
-			<Latex math={"f(x) "} />
+			<Latex math={"f(x) = ..."} />
 		</div>
 	{/if}
 
