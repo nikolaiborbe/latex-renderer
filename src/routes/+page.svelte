@@ -27,7 +27,7 @@
 
 	// Generic function to save the image. For transparent, we simply omit the backgroundColor style.
 	function saveImageOption(bgColor: string, filename: string) {
-		const scale = 2;
+		const scale = 5;
 		const width = formulaContainer.offsetWidth * scale;
 		const height = formulaContainer.offsetHeight * scale;
 		// If bgColor is 'transparent', don't include backgroundColor property.
