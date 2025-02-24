@@ -74,7 +74,7 @@
 <!-- Global listener for clicks -->
 <svelte:window on:click={handleClickOutside} />
 
-<div class="flex h-screen flex-col items-center justify-start">
+<div class="flex h-screen flex-col px-4 items-center justify-start">
 	<div class="pt-10 md:pt-20 lg:pt-72">
 		{#if !math}
 			<div class="h-fit w-fit px-4 py-2">
@@ -88,7 +88,7 @@
 	</div>
 	<div class="mt-10">
 		<textarea
-			class="h-72 w-96 md:w-[35rem] rounded-lg border border-gray-300 p-4 shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
+			class="h-72 w-90 md:w-[35rem] rounded-lg border border-gray-300 p-4 shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
 			placeholder="Write your latex here..."
 			bind:value={math}
 		></textarea>
