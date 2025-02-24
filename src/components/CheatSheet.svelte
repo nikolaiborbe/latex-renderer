@@ -5,7 +5,7 @@
 <h1 class="mt-20 text-2xl font-bold">LaTeX Cheat Sheet</h1>
 
 <!-- A responsive grid that becomes 1 column on small screens, 2 on medium, 3 on large -->
-<div class="grid grid-cols-1 gap-10 pt-10 md:grid-cols-2 lg:grid-cols-3">
+<div class="grid grid-cols-1 gap-10 pt-10 md:grid-cols-2 lg:grid-cols-3 ">
 
 	<!-- Font Face -->
 	<div class="w-full">
@@ -76,8 +76,10 @@
 	<div class="w-full">
 		<h2 class="mb-2 text-xl font-semibold">Accents</h2>
 		<pre class="p-4">
-\hat&#123;x&#125;, \bar&#123;x&#125;, \vec&#123;x&#125;, \dot&#123;x&#125;
-\ddot&#123;x&#125;, \tilde&#123;x&#125;, \widetilde&#123;xyz&#125;
+\hat&#123;x&#125;, \bar&#123;x&#125;, 
+\vec&#123;x&#125;, \dot&#123;x&#125;
+\ddot&#123;x&#125;, \tilde&#123;x&#125;,
+\widetilde&#123;xyz&#125;
     </pre>
 
 		<h3 class="mb-2 font-semibold">Common Operators</h3>
@@ -102,9 +104,10 @@
 
 		<h3 class="mb-2 font-semibold">Arrows</h3>
 		<pre class="p-4">
-\to, \leftarrow, \uparrow, \downarrow
-\Rightarrow, \Leftarrow, \iff, \implies
-\mapsto, \longrightarrow
+\to, \leftarrow, \uparrow,
+\Rightarrow, \Leftarrow, 
+\iff, \implies, \mapsto,
+\longrightarrow, \downarrow
     </pre>
 	</div>
 
