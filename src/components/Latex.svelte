@@ -20,7 +20,9 @@
   };
 
   // Render when the component mounts
-  onMount(renderMath);
+  onMount(() => {
+    renderMath();
+  });
 
   // Re-render whenever the `math` prop changes
   $effect(() => {

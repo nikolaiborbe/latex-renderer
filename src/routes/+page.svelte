@@ -63,7 +63,7 @@
 	}
 
 	function copyText() {
-		navigator.clipboard.writeText(math);
+		navigator.clipboard.writeText(`$${math}$`);
 		copyButtonText = 'Copied!';
 		setTimeout(() => {
 			copyButtonText = 'Copy';
