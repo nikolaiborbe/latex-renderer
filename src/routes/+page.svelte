@@ -3,10 +3,12 @@
 	import Latex from '../components/Latex.svelte';
 	import CheatSheet from '../components/CheatSheet.svelte';
 	import domtoimage from 'dom-to-image';
+	import { onMount } from 'svelte';
 
 	let math = '';
 	let formulaContainer: HTMLElement;
 	let copyButtonText = 'Copy';
+	let inputBox: HTMLTextAreaElement;
 
 	// Controls whether the save options dropdown is shown
 	let showSaveOptions = false;
@@ -69,6 +71,10 @@
 			copyButtonText = 'Copy';
 		}, 2000);
 	}
+
+	onMount(() => {
+		inputBox.focus();
+	});
 </script>
 
 <!-- Global listener for clicks -->
@@ -91,6 +97,7 @@
 			class="h-72 w-90 md:w-[35rem] rounded-lg border border-gray-300 p-4 shadow-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
 			placeholder="Write your latex here..."
 			bind:value={math}
+			bind:this={inputBox}
 		></textarea>
 		<div class="flex justify-between gap-4 pt-2">
 			<button
